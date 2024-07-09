@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 15px;
+}
+
+/* Page Background Blur */
+.blue__gradient {
+
+  position: absolute;
+  width: 404px;
+  height: 900px;
+  left: 0%;
+  top: 100%;
+
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  filter: blur(175px);
+  transform: rotate(-114.2deg);
+
+}
+
+.blue__gradient-02 {
+
+  position: absolute;
+  width: 600px;
+  height: 900px;
+  left: -20%;
+  top: 60%;
+
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 200%);
+  filter: blur(175px);
+  transform: rotate(-114.2deg);
+
+}
+
+.blue__gradient-03 {
+
+  position: absolute;
+  width: 250px;
+  height: 900px;
+  left: 60%;
+  top: 30%;
+
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 150%);
+  filter: blur(175px);
+  transform: rotate(-114.2deg);
+
+}
+
+.blue__gradient-04 {
+
+  position: absolute;
+  width: 400px;
+  height: 900px;
+  left: 30%;
+  top: 30%;
+
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 150%);
+  filter: blur(175px);
+  transform: rotate(-114.2deg);
+
+}
+
+.blue__gradient-05 {
+
+  position: absolute;
+  width: 400px;
+  height: 900px;
+  left: 0%;
+  top: 30%;
+
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 150%);
+  filter: blur(175px);
+  transform: rotate(-114.2deg);
+
+}
+
+/* End of Page Background Blur */
+
+/* Text Gradient */
+.cloud-gradient {
+  background: linear-gradient(to right, #2C75AC 0.89%, #286B9D 17.23%, #256391 42.04%, #21577f 55.12%, #1A4565 71.54%, #163B56 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.cloud-gradient-white {
+  background: linear-gradient(to right bottom, #2C75AC 0.89%, #286B9D 17.23%, #256391 42.04%, #e1f2ff 55.12%, #ffffff 71.54%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.cloud-bg-gradient {
+  background: linear-gradient(to right, #2C75AC 0.89%, #286B9D 17.23%, #256391 42.04%, #21577f 55.12%, #1A4565 71.54%, #163B56 100%);
+}
+
+/* End of Text Gradient */
+
+/* Back ground Gradient */
+.bg-gradient {
+  background: linear-gradient(157.81deg, #def9fa -43.27%, #bef3f5 -21.24%, #9dedf0 12.19%, #7de7eb 29.82%, #5ce1e6 51.94%, #33bbcf 90.29%);
+}
+
+/* End Back ground Gradient */
+
+
+/* The main page */
+.main {
+  width: 100vw !important;
+  min-height: 100vh !important;
+  position: fixed !important;
+  display: flex !important;
+  justify-content: center !important;
+  padding: 120px 24px 160px !important;
+  pointer-events: none !important;
+}
+
+.main:before {
+  background: radial-gradient(#fafafa 100%) !important;
+  position: absolute !important;
+  content: "" !important;
+  z-index: 2 !important;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+}
+/* End of the main page */
+
+/* Grid */
+.main:after {
+  content: "" !important;
+  background-image: url("./assets/images/grid.svg") !important;
+  z-index: 1 !important;
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+  /* opacity: .6 !important; */
+  filter: invert(1) !important;
+}
+/* End of Grid */
+
+/* Gradient */
+.gradient {
+  height: fit-content !important;
+  z-index: 3 !important;
+  width: 100% !important;
+  max-width: 640px !important;
+  background-image: radial-gradient( at 27% 37%, hsla(215, 98%, 61%, 1) 0px, transparent 0% ), radial-gradient(at 97% 21%, rgb(128, 114, 254) 0px, transparent 50%), radial-gradient(at 52% 99%, rgb(9, 0, 141) 0px, transparent 50%), radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%), radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%), radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%), radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%) !important;
+  position: absolute !important;
+  content: "" !important;
+  width: 100% !important;
+  height: 100% !important;
+  filter: blur(100px) saturate(150%) !important;
+  top: 80px !important;
+  opacity: .15 !important;
+}
+/* End of Gradient */
+ul li{
+  text-decoration: none !important;
+  list-style: none !important;
+  color: white !important;
+}
