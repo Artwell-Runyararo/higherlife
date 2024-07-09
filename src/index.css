@@ -29,7 +29,7 @@
   width: 600px;
   height: 900px;
   left: -20%;
-  top: 60%;
+  top: 300%;
 
   background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 200%);
   filter: blur(175px);
@@ -42,10 +42,10 @@
   position: absolute;
   width: 250px;
   height: 900px;
-  left: 60%;
-  top: 30%;
+  left: 80%;
+  top: 200%;
 
-  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 150%);
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #f0ba0a 200%);
   filter: blur(175px);
   transform: rotate(-114.2deg);
 

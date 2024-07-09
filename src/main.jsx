@@ -12,6 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <div className="main dark:bg-slate-900 dark:text-white -z-10">
       <div className='gradient -z-10' />
+    
     </div>
     <BrowserRouter>
       <Routes>
