@@ -30,7 +30,6 @@
   height: 900px;
   left: -20%;
   top: 300%;
-
   background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 200%);
   filter: blur(175px);
   transform: rotate(-114.2deg);
@@ -38,17 +37,15 @@
 }
 
 .blue__gradient-03 {
-
   position: absolute;
   width: 250px;
   height: 900px;
-  left: 80%;
+  left: 60%;
   top: 200%;
-
   background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #f0ba0a 200%);
   filter: blur(175px);
   transform: rotate(-114.2deg);
-
+  -webkit-filter: blur(175px);
 }
 
 .blue__gradient-04 {
@@ -82,7 +79,7 @@
 /* End of Page Background Blur */
 
 /* Text Gradient */
-.cloud-gradient {
+.yellow-gradient {
   background: linear-gradient(to right, #2C75AC 0.89%, #286B9D 17.23%, #256391 42.04%, #21577f 55.12%, #1A4565 71.54%, #163B56 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -90,12 +87,33 @@
   text-fill-color: transparent;
 }
 
-.cloud-gradient-white {
+.yellow-gradient-text {
+  background-image: linear-gradient(to right top, #ffd463, #fecd51, #fdc53e, #fcbe28, #fbb600) !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.yellow-gradient-white {
   background: linear-gradient(to right bottom, #2C75AC 0.89%, #286B9D 17.23%, #256391 42.04%, #e1f2ff 55.12%, #ffffff 71.54%, #ffffff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+}
+
+.text-color {
+  color: #FBB600 !important;
+}
+
+.text-bg {
+  background-color: #FBB600 !important;
+}
+
+
+.text-color-2 {
+  color: #004CA2 !important;
 }
 
 .cloud-bg-gradient {
@@ -132,6 +150,7 @@
   height: 100% !important;
   top: 0 !important;
 }
+
 /* End of the main page */
 
 /* Grid */
@@ -146,6 +165,7 @@
   /* opacity: .6 !important; */
   filter: invert(1) !important;
 }
+
 /* End of Grid */
 
 /* Gradient */
@@ -154,7 +174,7 @@
   z-index: 3 !important;
   width: 100% !important;
   max-width: 640px !important;
-  background-image: radial-gradient( at 27% 37%, hsla(215, 98%, 61%, 1) 0px, transparent 0% ), radial-gradient(at 97% 21%, rgb(128, 114, 254) 0px, transparent 50%), radial-gradient(at 52% 99%, rgb(9, 0, 141) 0px, transparent 50%), radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%), radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%), radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%), radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%) !important;
+  background-image: radial-gradient(at 27% 37%, hsla(215, 98%, 61%, 1) 0px, transparent 0%), radial-gradient(at 97% 21%, rgb(128, 114, 254) 0px, transparent 50%), radial-gradient(at 52% 99%, rgb(9, 0, 141) 0px, transparent 50%), radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%), radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%), radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%), radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%) !important;
   position: absolute !important;
   content: "" !important;
   width: 100% !important;
@@ -163,9 +183,15 @@
   top: 80px !important;
   opacity: .15 !important;
 }
+
 /* End of Gradient */
-ul li{
+ul li {
   text-decoration: none !important;
   list-style: none !important;
   color: white !important;
+}
+
+.bgPicture {
+  background-image: url("./assets/images/img1.jpg") !important;
+  z-index: 1 !important;
 }

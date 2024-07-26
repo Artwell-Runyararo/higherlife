@@ -13,8 +13,8 @@ function App() {
       {/* gradient end */}
       <Services />
       <About />
-         {/* gradient start */}
-         <div className="absolute hidden sm:flex -z-10 w-[50%] h-[50%] blue__gradient-02" />
+      {/* gradient start */}
+      <div className="absolute hidden sm:flex -z-10 w-[50%] h-[50%] blue__gradient-02" />
       {/* gradient end */}
       <Footer />
     </>
