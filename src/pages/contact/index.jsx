@@ -31,14 +31,14 @@ const Contact_us = () => {
         </div>
         {/* End of Welcome Section */}
       </div>
-      <div className="container">
+      <div className="container py-5">
         <div className="row">
           <div className="col-sm col-md col-lg">
-            <Card className='p-5 bg-color-primary border-0'>
+            <Card bordered={false} className='backdrop-blur-sm bg-slate-900/40 hover:bg-slate-800/40 p-5 rounded-3xl'>
               <div className="row">
                 <div className="col-sm col-md col-lg">
                   <Flex justify='center' align="center" vertical='vertical'>
-                    <p className='text-5xl font-bold'>Get Intouch</p>
+                    <p className='text-5xl text-white font-bold'>Get Intouch</p>
                   </Flex>
                 </div>
               </div>
@@ -66,16 +66,16 @@ const Contact_us = () => {
                 </div>
                 <div className="row">
                   <div className='col-sm col-md col-lg'>
-                    <Button className='bg-yellow-500  border-0' htmlType='submit' >Send message</Button>
+                    <Button className='bg-yellow-500 text-black border-0' htmlType='submit' >Send message</Button>
                   </div>
                 </div>
               </Form>
             </Card>
           </div>
-          <div className="col-sm col-md col-lg bg-yellow-500 ">
+          <div className="col-sm col-md col-lg bg-yellow-500 rounded-3xl ">
 
             <Flex className='p-16' vertical='vertical'>
-              <p>INFORMTION</p>
+              <p className='font-black text-3xl'>INFORMTION</p>
               <div className="col-sm col-md col-lg ">
                 <Space>
                   <span className=''><i className="bi bi-telephone-fill text-3xl text-color-primary"></i></span>

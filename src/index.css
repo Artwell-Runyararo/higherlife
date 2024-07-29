@@ -3,9 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --black-gradient: linear-gradient(144.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%);
+  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
 * {
   font-family: 'Poppins', sans-serif !important;
   font-size: 15px;
+  scroll-behavior: smooth;
 }
 
 /* Page Background Blur */
@@ -80,7 +89,7 @@
 
 /* Text Gradient */
 .yellow-gradient {
-  background: linear-gradient(to right, #2C75AC 0.89%, #286B9D 17.23%, #256391 42.04%, #21577f 55.12%, #1A4565 71.54%, #163B56 100%);
+  background: linear-gradient(to right top, #ffd463, #fecd51, #fdc53e, #fcbe28, #fbb600) !important;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -194,4 +203,106 @@ ul li {
 .bgPicture {
   background-image: url("./assets/images/img1.jpg") !important;
   z-index: 1 !important;
+}
+
+.feature-card:hover {
+  background: var(--black-gradient);
+  box-shadow: var(--card-shadow);
+}
+
+.feedback-container .feedback-card:last-child {
+  margin-right: 0px;
+}
+
+.feedback-card {
+  background: transparent;
+}
+
+.feedback-card:hover {
+  background: var(--black-gradient);
+}
+
+.bg-black-gradient {
+  background: linear-gradient(144.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%);
+}
+
+.bg-black-gradient-2 {
+  background: linear-gradient(-168.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%);
+}
+
+
+
+.timeline-main {
+  width: 100%;
+  padding: 25px;
+
+  .timeline-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: calc(100% - 10px);
+      background-color: #64748b;
+      animation: line 5s linear;
+
+      @media (max-width: 767px) {
+        left: 95%;
+      }
+    }
+
+    .timeline-card {
+      width: 50%;
+      margin-right: auto;
+      position: relative;
+
+      @media (max-width: 767px) {
+        width: 95%;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        right: -10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        background: #64748b;
+        animation: fadeIn 1.5s;
+        animation-fill-mode: both;
+      }
+
+      &:nth-child(even) {
+        @media (min-width: 768px) {
+          margin-left: auto;
+          margin-right: 0;
+
+          &::after {
+            right: unset;
+            left: -10px;
+          }
+
+          .timeline-card-wrap {
+            margin-right: 0;
+            margin-left: 35px;
+          }
+        }
+      }
+    }
+  }
 }
