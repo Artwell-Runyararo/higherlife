@@ -11,7 +11,7 @@ const Contact_us = () => {
       <Nav />
       <div className="container-fluid bgPicture">
         {/* Welcome Section */}
-        <div className="row bg-slate-950/90 justify-center py-5">
+        <div className="row bg-slate-950/90 justify-center h-96  py-5">
           <div className="col-sm col-md col-lg text-center py-5">
             <p className="text-uppercase font-black text-white text-6xl">contact us</p>
             {/* Double Lines */}
@@ -81,7 +81,7 @@ const Contact_us = () => {
                   <span className=''><i className="bi bi-telephone-fill text-3xl text-color-primary"></i></span>
                   <span>
                     <p className='m-0 font-semibold'>Phone No</p>
-                    <p className='m-0 text-color-primary'>+263 773 588 222 / +263 714 760 355</p>
+                    <p className='m-0 text-color-primary'>011 568 0825</p>
                   </span>
                 </Space>
               </div>
@@ -91,7 +91,7 @@ const Contact_us = () => {
                   <span className=''><i className="bi bi-envelope-fill text-3xl text-color-primary"></i></span>
                   <span>
                     <p className='m-0 font-semibold'>Email Address</p>
-                    <p className='m-0 text-color-primary'>michael@micfix.co.zw</p>
+                    <p className='m-0 text-color-primary'>info@higherlifepersonnel.co.za</p>
                   </span>
                 </Space>
               </div>
@@ -101,7 +101,7 @@ const Contact_us = () => {
                   <span className=''><i className="bi bi-geo-alt-fill text-3xl text-color-primary"></i></span>
                   <span>
                     <p className='m-0 font-semibold'>Address</p>
-                    <p className='m-0 text-color-primary'>489, Nyabira Shopping Centre Nyabira</p>
+                    <p className='m-0 text-color-primary'>Clearwater Office Park, Building 3 ,Millenium Road, West Rand, 1735</p>
                   </span>
                 </Space>
               </div>
