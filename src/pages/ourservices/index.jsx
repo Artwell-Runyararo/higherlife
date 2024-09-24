@@ -1,9 +1,9 @@
-import React from 'react';
-import { NavBar, Nav, Footer } from '../../components';
-import { Space, Card } from 'antd';
-import { ClockCircleOutlined, DollarOutlined, StarOutlined, CloseCircleOutlined } from '@ant-design/icons';
-import { navVariants, slideIn, staggerContainer, textVariant, textVariant2, textContainer, fadeIn, zoomIn, footerVariants } from '../../utils/motion';
+import { ClockCircleOutlined, CloseCircleOutlined, DollarOutlined, StarOutlined } from '@ant-design/icons';
+import { Card, Space } from 'antd';
 import { motion } from 'framer-motion';
+import React from 'react';
+import { Footer, Nav, NavBar } from '../../components';
+import { staggerContainer, textVariant } from '../../utils/motion';
 
 const Services = () => {
   const features = [

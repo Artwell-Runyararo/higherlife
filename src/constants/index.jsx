@@ -16,10 +16,6 @@ export const navLinks = [
         title: "Specialties",
     },
     {
-        id: "/vacancies",
-        title: "Vacancies",
-    },
-    {
         id: "/contact",
         title: "Contact",
     },

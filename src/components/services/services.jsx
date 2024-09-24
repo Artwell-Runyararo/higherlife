@@ -36,10 +36,10 @@ const Services = () => {
                 </motion.p>
               </div>
               {/* Startup card */}
-              <div className="w-100 p-8  backdrop-blur-lg bg-slate-900/40 hover:bg-slate-800/40 text-center rounded-3xl border-4 shadow-2xl transform scale-110">
+              <div className="w-100 p-8  backdrop-blur-lg  bg-slate-900/40 hover:bg-slate-800/40 text-center rounded-3xl border-4 shadow-2xl transform scale-110">
                 <div className="flex justify-center p-5">
                   <motion.p variants={textVariant(0.5)}>
-                    <h1 className="text-5xl yellow-gradient-text font-bold">Executive Search</h1>
+                    <h1 className="text-5xl yellow-gradient-text font-bold">Executive Search </h1>
                   </motion.p>
                 </div>
                 <motion.p variants={textVariant(1.1)}>
