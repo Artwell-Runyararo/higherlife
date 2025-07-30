@@ -14,11 +14,11 @@ const About_us = () => {
       <motion.div variants={staggerContainer} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.25 }}>
         <div className="container-fluid bgPicture ">
           {/* Welcome Section */}
-          <div className="row bg-slate-950/90 justify-center h-96 py-5">
-            <div className="col-sm col-md col-lg text-center py-5">
-              <p className="text-uppercase font-black text-white text-6xl">About us</p>
+          <div className="justify-center py-5 row bg-slate-950/90 h-96">
+            <div className="py-5 text-center col-sm col-md col-lg">
+              <p className="text-6xl font-black text-white text-uppercase">About us</p>
               {/* Double Lines */}
-              <div className="row justify-center mt-4">
+              <div className="justify-center mt-4 row">
                 <div className="col-6">
                   <div className="flex justify-center">
                     <div className="col-sm col-md col-lg">&ensp;</div>
@@ -35,12 +35,12 @@ const About_us = () => {
           {/* End of Welcome Section */}
         </div>
 
-        <div className="container-fluid hidden lg:block">
+        <div className="hidden container-fluid lg:block">
           <div className="row px-44">
-            <div className="col-sm col-md col-lg text-white py-24">
+            <div className="py-24 text-white col-sm col-md col-lg">
               <Space size={'large'}>
                 <p style={{ height: '40px', width: '3px' }} className='bg-white'><p style={{ height: '20px', width: '3px' }} className='bg-yellow-500'></p></p>
-                <p className='yellow-gradient-text text-4xl text-uppercase font-semibold'>Who we are</p>
+                <p className='text-4xl font-semibold yellow-gradient-text text-uppercase'>Who we are</p>
               </Space>
               <motion.p variants={textVariant(1.0)}>
                 <p className='text-sm'>
@@ -55,13 +55,13 @@ const About_us = () => {
                 </p>
               </motion.p>
               <motion.p variants={textVariant(1.2)}>
-                <p className='text-slate-400 pt-5'>
+                <p className='pt-5 text-slate-400'>
                   Higher Life Personnel Solutions prides itself in offering dynamic pricing and cost-effective solutions for our valued clients.  As a member of APSO,
                   Higher Life Personnel  is ethically bound to render a professional service at all times to all our clients
                 </p>
               </motion.p>
             </div>
-            <div className="col-sm col-md col-lg text-white py-24">
+            <div className="py-24 text-white col-sm col-md col-lg">
               <span className='flex justify-center py-5'><img src={logo} className='w-16 img-fluid' alt="" srcset="" /></span>
               <motion.p variants={textVariant(1.4)}>
                 <p className='text-slate-400'>
@@ -74,11 +74,11 @@ const About_us = () => {
           <div className="row px-44">
             <div className="col-sm col-md col-lg">
               <div className="row">
-                <div className="col-sm col-md col-lg pb-4">
+                <div className="pb-4 col-sm col-md col-lg">
                   <motion.p variants={textVariant(1.0)}>
-                    <Card bordered={false} className='backdrop-blur-sm bg-slate-900/40 hover:bg-slate-800/40'>
+                    <Card bordered={false} className='backdrop-blur-sm bg-slate-800/40 hover:bg-slate-800/40'>
                       <div className="row">
-                        <div className="col-sm col-md col-lg text-center text-white p-5">
+                        <div className="p-5 text-center text-white col-sm col-md col-lg">
                           <p><i class="bi bi-ticket text-6xl text-slate-400"></i></p>
                           <p className='text-3xl font-semibold'>Our Mission</p>
                           <motion.p variants={textVariant(1.1)}>
@@ -94,9 +94,9 @@ const About_us = () => {
                 </div>
                 <div className="col-sm col-md col-lg">
                   <motion.p variants={textVariant(1.1)}>
-                    <Card bordered={false} className='backdrop-blur-sm bg-slate-900/40 hover:bg-slate-800/40'>
+                    <Card bordered={false} className='backdrop-blur-sm bg-slate-800/40 hover:bg-slate-800/40'>
                       <div className="row">
-                        <div className="col-sm col-md col-lg text-center text-white p-5">
+                        <div className="p-5 text-center text-white col-sm col-md col-lg">
                           <p><i class="bi bi-ticket text-6xl text-slate-400"></i></p>
                           <p className='text-3xl font-semibold'>Our Vision</p>
                           <motion.p variants={textVariant(1.2)}>
@@ -114,12 +114,12 @@ const About_us = () => {
               <div className="row">
                 <div className="col-sm col-md col-lg">
                   <motion.p variants={textVariant(1.3)}>
-                    <Card bordered={false} className='backdrop-blur-sm bg-slate-900/40 hover:bg-slate-800/40'>
+                    <Card bordered={false} className='backdrop-blur-sm bg-slate-800/40 hover:bg-slate-800/40'>
                       <div className="row">
-                        <div className="col-sm col-md col-lg text-center text-white p-5">
+                        <div className="p-5 text-center text-white col-sm col-md col-lg">
                           <p><i class="bi bi-cpu text-6xl text-slate-400"></i></p>
                           <p className='text-3xl font-semibold'>Our Process</p>
-                          <div className="timeline-main text-white">
+                          <div className="text-white timeline-main">
                             <div className="timeline-wrap">
 
                               <div className="timeline-card">
@@ -180,9 +180,9 @@ const About_us = () => {
                 </div>
                 <div className="col-sm col-md col-lg">
                   <motion.p variants={textVariant(1.4)}>
-                    <Card bordered={false} className='backdrop-blur-sm bg-slate-900/40 hover:bg-slate-800/40'>
+                    <Card bordered={false} className='backdrop-blur-sm bg-slate-800/40 hover:bg-slate-800/40'>
                       <div className="row">
-                        <div className="col-sm col-md col-lg text-center text-white p-5">
+                        <div className="p-5 text-center text-white col-sm col-md col-lg">
                           <p><i class="bi bi-bank text-6xl text-slate-400"></i></p>
                           <p className='text-3xl font-semibold'>Our Values</p>
                           <p className='text-slate-400'>
@@ -224,9 +224,9 @@ const About_us = () => {
                   </motion.p>
                   <br />
                   <motion.p variants={textVariant(1.5)}>
-                    <Card bordered={false} className='backdrop-blur-sm bg-slate-900/40 hover:bg-slate-800/40'>
+                    <Card bordered={false} className='backdrop-blur-sm bg-slate-800/40 hover:bg-slate-800/40'>
                       <div className="row">
-                        <div className="col-sm col-md col-lg text-center text-white p-5">
+                        <div className="p-5 text-center text-white col-sm col-md col-lg">
                           <p><i class="bi bi-person-rolodex text-6xl text-slate-400"></i></p>
                           <p className='text-3xl font-semibold'>Memberships</p>
                           <p><img src={pic1} className='w-50 img-fluid' alt="" /></p>
@@ -240,21 +240,21 @@ const About_us = () => {
             </div>
           </div>
           <div className="row py-44">
-            <div className="col-sm col-md col-lg text-center">
+            <div className="text-center col-sm col-md col-lg">
               <Space size={'large'}>
                 <p style={{ height: '40px', width: '3px' }} className='bg-white'><p style={{ height: '20px', width: '3px' }} className='bg-yellow-500'></p></p>
-                <p className='yellow-gradient-text text-4xl text-uppercase font-semibold'>Partnered with Success</p>
+                <p className='text-4xl font-semibold yellow-gradient-text text-uppercase'>Partnered with Success</p>
               </Space>
-              <p className='text-white pb-5'>Business across Queensland rely on us for dedicated staffing solutions and career growth</p>
+              <p className='pb-5 text-white'>Business across Queensland rely on us for dedicated staffing solutions and career growth</p>
               <p className='backdrop-blur-sm bg-slate-900/60 hover:bg-slate-800/40'>
                 <marquee behavior="sliding" direction="" scrollamount="10" className="p-2">
-                  <span><img src={pic3} className='w-5  mx-16 img-fluid' alt="logos" srcset="" /></span>
-                  <span><img src={pic4} className='w-32  mx-16 img-fluid' alt="logos" srcset="" /></span>
-                  <span><img src={pic5} className='w-32  mx-16 img-fluid' alt="logos" srcset="" /></span>
-                  <span><img src={pic6} className='w-32  mx-16 img-fluid' alt="logos" srcset="" /></span>
-                  <span><img src={pic7} className='w-32  mx-16 img-fluid' alt="logos" srcset="" /></span>
-                  <span><img src={pic8} className='w-32  mx-16 img-fluid' alt="logos" srcset="" /></span>
-                  <span><img src={pic9} className='w-32  mx-16 img-fluid' alt="logos" srcset="" /></span>
+                  <span><img src={pic3} className='w-5 mx-16 img-fluid' alt="logos" srcset="" /></span>
+                  <span><img src={pic4} className='w-32 mx-16 img-fluid' alt="logos" srcset="" /></span>
+                  <span><img src={pic5} className='w-32 mx-16 img-fluid' alt="logos" srcset="" /></span>
+                  <span><img src={pic6} className='w-32 mx-16 img-fluid' alt="logos" srcset="" /></span>
+                  <span><img src={pic7} className='w-32 mx-16 img-fluid' alt="logos" srcset="" /></span>
+                  <span><img src={pic8} className='w-32 mx-16 img-fluid' alt="logos" srcset="" /></span>
+                  <span><img src={pic9} className='w-32 mx-16 img-fluid' alt="logos" srcset="" /></span>
                   <span><img src={pic10} className='w-32 mx-16 img-fluid' alt="logos" srcset="" /></span>
                   <span><img src={pic11} className='w-32 mx-16 img-fluid' alt="logos" srcset="" /></span>
                   <span><img src={pic12} className='w-32 mx-16 img-fluid' alt="logos" srcset="" /></span>
@@ -271,11 +271,11 @@ const About_us = () => {
       </motion.div>
       {/* Mobile */}
       <div className="container-fluid lg:hidden">
-        <div className="row px-5">
-          <div className="col-sm col-md col-lg text-white py-16">
+        <div className="px-5 row">
+          <div className="py-16 text-white col-sm col-md col-lg">
             <Space size={'large'}>
               <p style={{ height: '40px', width: '3px' }} className='bg-white'><p style={{ height: '20px', width: '3px' }} className='bg-yellow-500'></p></p>
-              <p className='yellow-gradient-text text-4xl text-uppercase font-semibold'>Who we are</p>
+              <p className='text-4xl font-semibold yellow-gradient-text text-uppercase'>Who we are</p>
             </Space>
             <p className='text-sm'>
               Today the competitive economic market requires that each company draw upon the maximum potential of all of their human resources in order to succed in this global marketplace.
@@ -285,12 +285,12 @@ const About_us = () => {
               We focus on understanding and matching the expectations and cultures of our clients with the skills, experience and personalities of our candidates. This allows us to constantly deliver a world-class service to meet diverse customer and candidate needs.We have expertise in managing the entire life cycle of a recruitment flow. From concept to execution, from need identification to role defining, from budgeting to job offer,
               from market research to interview, from sourcing to reference checks, we are capable of managing it all.
             </p>
-            <p className='text-slate-400 pt-5'>
+            <p className='pt-5 text-slate-400'>
               Higher Life Personnel Solutions prides itself in offering dynamic pricing and cost-effective solutions for our valued clients.  As a member of APSO,
               Higher Life Personnel  is ethically bound to render a professional service at all times to all our clients
             </p>
           </div>
-          <div className="col-sm col-md col-lg text-white py-24">
+          <div className="py-24 text-white col-sm col-md col-lg">
             <span className='flex justify-center py-5'><img src={logo} className='w-16 img-fluid' alt="" srcset="" /></span>
             <p className='text-slate-400'>
               Higher Life Personnel focuses on placing professionals and skilled people in permanent and contract employment. At HLPS we tackle human resource challenges with confidence because our team is highly experienced across every industry we serve. Our talent management and recruitment efforts have no boundaries. As a regionally networked company, we benefit from an extensive network of talent across all major African markets. By blending our talent
@@ -299,13 +299,13 @@ const About_us = () => {
 
           </div>
         </div>
-        <div className="row px-5">
+        <div className="px-5 row">
           <div className="col-sm col-md col-lg">
             <div className="row">
-              <div className="col-sm-12 col-md-12 col-lg pb-4">
-                <Card bordered={false} className='backdrop-blur-sm bg-slate-900/40 hover:bg-slate-800/40'>
+              <div className="pb-4 col-sm-12 col-md-12 col-lg">
+                <Card bordered={false} className='backdrop-blur-sm bg-slate-800/40 hover:bg-slate-800/40'>
                   <div className="row">
-                    <div className="col-sm col-md col-lg text-center text-white p-5">
+                    <div className="p-5 text-center text-white col-sm col-md col-lg">
                       <p><i class="bi bi-ticket text-6xl text-slate-400"></i></p>
                       <p className='text-3xl font-semibold'>Our Mission</p>
                       <p className='text-slate-400'>
@@ -316,10 +316,10 @@ const About_us = () => {
                   </div>
                 </Card>
               </div>
-              <div className="col-sm-12 col-md-12 col-lg  pb-4">
-                <Card bordered={false} className='backdrop-blur-sm bg-slate-900/40 hover:bg-slate-800/40'>
+              <div className="pb-4 col-sm-12 col-md-12 col-lg">
+                <Card bordered={false} className='backdrop-blur-sm bg-slate-800/40 hover:bg-slate-800/40'>
                   <div className="row">
-                    <div className="col-sm col-md col-lg text-center text-white p-5">
+                    <div className="p-5 text-center text-white col-sm col-md col-lg">
                       <p><i class="bi bi-ticket text-6xl text-slate-400"></i></p>
                       <p className='text-3xl font-semibold'>Our Vision</p>
                       <p className='text-slate-400'>
@@ -332,13 +332,13 @@ const About_us = () => {
               </div>
             </div>
             <div className="row">
-              <div className="col-sm-12 col-md-12 col-lg  pb-4">
-                <Card bordered={false} className='backdrop-blur-sm bg-slate-900/40 hover:bg-slate-800/40'>
+              <div className="pb-4 col-sm-12 col-md-12 col-lg">
+                <Card bordered={false} className='backdrop-blur-sm bg-slate-800/40 hover:bg-slate-800/40'>
                   <div className="row">
-                    <div className="col-sm col-md col-lg text-center text-white p-5">
+                    <div className="p-5 text-center text-white col-sm col-md col-lg">
                       <p><i class="bi bi-cpu text-6xl text-slate-400"></i></p>
                       <p className='text-3xl font-semibold'>Our Process</p>
-                      <div className=" text-white">
+                      <div className="text-white ">
                         <div className="">
 
                           <div className="timeline-card">
@@ -396,10 +396,10 @@ const About_us = () => {
                   </div>
                 </Card>
               </div>
-              <div className="col-sm-12 col-md-12 col-lg  pb-4">
-                <Card bordered={false} className='backdrop-blur-sm bg-slate-900/40 hover:bg-slate-800/40'>
+              <div className="pb-4 col-sm-12 col-md-12 col-lg">
+                <Card bordered={false} className='backdrop-blur-sm bg-slate-800/40 hover:bg-slate-800/40'>
                   <div className="row">
-                    <div className="col-sm col-md col-lg text-center text-white p-5">
+                    <div className="p-5 text-center text-white col-sm col-md col-lg">
                       <p><i class="bi bi-bank text-6xl text-slate-400"></i></p>
                       <p className='text-3xl font-semibold'>Our Values</p>
                       <p className='text-slate-400'>
@@ -439,9 +439,9 @@ const About_us = () => {
                   </div>
                 </Card>
                 <br />
-                <Card bordered={false} className='backdrop-blur-sm bg-slate-900/40 hover:bg-slate-800/40'>
+                <Card bordered={false} className='backdrop-blur-sm bg-slate-800/40 hover:bg-slate-800/40'>
                   <div className="row">
-                    <div className="col-sm col-md col-lg text-center text-white p-5">
+                    <div className="p-5 text-center text-white col-sm col-md col-lg">
                       <p><i class="bi bi-person-rolodex text-6xl text-slate-400"></i></p>
                       <p className='text-3xl font-semibold'>Memberships</p>
                       <p><img src={pic1} className='w-50 img-fluid' alt="" /></p>
@@ -454,21 +454,21 @@ const About_us = () => {
           </div>
         </div>
         <div className="row py-44">
-          <div className="col-sm col-md col-lg text-center">
+          <div className="text-center col-sm col-md col-lg">
             <Space size={'large'}>
               <p style={{ height: '40px', width: '3px' }} className='bg-white'><p style={{ height: '20px', width: '3px' }} className='bg-yellow-500'></p></p>
-              <p className='yellow-gradient-text text-4xl text-uppercase font-semibold'>Partnered with Success</p>
+              <p className='text-4xl font-semibold yellow-gradient-text text-uppercase'>Partnered with Success</p>
             </Space>
-            <p className='text-white pb-5'>Business across Queensland rely on us for dedicated staffing solutions and career growth</p>
+            <p className='pb-5 text-white'>Business across Queensland rely on us for dedicated staffing solutions and career growth</p>
             <p className='backdrop-blur-sm bg-slate-900/60 hover:bg-slate-800/40'>
               <marquee behavior="sliding" direction="" scrollamount="10" className="p-2">
-                <span><img src={pic3} className='w-5  mx-16 img-fluid' alt="logos" srcset="" /></span>
-                <span><img src={pic4} className='w-32  mx-16 img-fluid' alt="logos" srcset="" /></span>
-                <span><img src={pic5} className='w-32  mx-16 img-fluid' alt="logos" srcset="" /></span>
-                <span><img src={pic6} className='w-32  mx-16 img-fluid' alt="logos" srcset="" /></span>
-                <span><img src={pic7} className='w-32  mx-16 img-fluid' alt="logos" srcset="" /></span>
-                <span><img src={pic8} className='w-32  mx-16 img-fluid' alt="logos" srcset="" /></span>
-                <span><img src={pic9} className='w-32  mx-16 img-fluid' alt="logos" srcset="" /></span>
+                <span><img src={pic3} className='w-5 mx-16 img-fluid' alt="logos" srcset="" /></span>
+                <span><img src={pic4} className='w-32 mx-16 img-fluid' alt="logos" srcset="" /></span>
+                <span><img src={pic5} className='w-32 mx-16 img-fluid' alt="logos" srcset="" /></span>
+                <span><img src={pic6} className='w-32 mx-16 img-fluid' alt="logos" srcset="" /></span>
+                <span><img src={pic7} className='w-32 mx-16 img-fluid' alt="logos" srcset="" /></span>
+                <span><img src={pic8} className='w-32 mx-16 img-fluid' alt="logos" srcset="" /></span>
+                <span><img src={pic9} className='w-32 mx-16 img-fluid' alt="logos" srcset="" /></span>
                 <span><img src={pic10} className='w-32 mx-16 img-fluid' alt="logos" srcset="" /></span>
                 <span><img src={pic11} className='w-32 mx-16 img-fluid' alt="logos" srcset="" /></span>
                 <span><img src={pic12} className='w-32 mx-16 img-fluid' alt="logos" srcset="" /></span>

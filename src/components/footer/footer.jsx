@@ -7,48 +7,48 @@ const Footer = () => {
     return (
         <>
             <div className="container-fluid">
-                <div className="row  backdrop-blur-md bg-slate-900 ps-4 p-lg-5">
-                    <div className="row text-sm my-5">
+                <div className="row backdrop-blur-md bg-slate-900 ps-4 p-lg-5">
+                    <div className="my-5 text-sm row">
                         <div className="col-sm-12 col-md-12 col-lg">
                             <span className="pl-3"><img src={logo} alt="HigherLife" className="object-contain img-fluid w-50" /></span>
-                            <p className="text-white text-2xl px-2 font-normal py-5">Professional Recruiters there for you every <br /> step of the way</p>
+                            <p className="px-2 py-5 text-2xl font-normal text-white">Professional Recruiters there for you every <br /> step of the way</p>
                         </div>
                         <div className="col-sm col-md col-lg">
                             <div className="row">
-                                <div className="col-sm col-md col-lg text-white">
+                                <div className="text-white col-sm col-md col-lg">
                                     <ul >
-                                        <li className="py-2 list-none font-semibold">Candidates</li>
-                                        <li className="py-2"><Link href={'#'} className='text-decoration-none text-white hover:text-yellow-600'>Jobs</Link></li>
-                                        <li className="py-2"><Link href={'#'} className='text-decoration-none text-white hover:text-yellow-600'>CV Services</Link></li>
-                                        <li className="py-2"><Link href={'#'} className='text-decoration-none text-white hover:text-yellow-600'>Upload Resume</Link></li>
+                                        <li className="py-2 font-semibold list-none">Candidates</li>
+                                        <li className="py-2"><Link href={'#'} className='text-white text-decoration-none hover:text-yellow-600'>Jobs</Link></li>
+                                        <li className="py-2"><Link href={'#'} className='text-white text-decoration-none hover:text-yellow-600'>CV Services</Link></li>
+                                        <li className="py-2"><Link href={'#'} className='text-white text-decoration-none hover:text-yellow-600'>Upload Resume</Link></li>
                                     </ul>
                                 </div>
-                                <div className="col-sm col-md col-lg text-white">
+                                <div className="text-white col-sm col-md col-lg">
                                     <ul>
                                         <li className="py-2 font-semibold">Clients</li>
-                                        <li className="py-2 hover:text-yellow-600"><Link className='text-decoration-none text-white' href={'##'}>Services</Link></li>
-                                        <li className="py-2 hover:text-yellow-600"><Link className='text-decoration-none text-white' href={'##'}>Benefits</Link></li>
-                                        <li className="py-2 hover:text-yellow-600"><Link className='text-decoration-none text-white' href={'##'}>Process</Link></li>
+                                        <li className="py-2 hover:text-yellow-600"><Link className='text-white text-decoration-none' href={'##'}>Services</Link></li>
+                                        <li className="py-2 hover:text-yellow-600"><Link className='text-white text-decoration-none' href={'##'}>Benefits</Link></li>
+                                        <li className="py-2 hover:text-yellow-600"><Link className='text-white text-decoration-none' href={'##'}>Process</Link></li>
                                     </ul>
                                 </div>
-                                <div className="col-sm col-md col-lg text-white">
+                                <div className="text-white col-sm col-md col-lg">
                                     <ul>
                                         <li className="py-2 font-semibold">Company</li>
-                                        <li className="py-2 hover:text-yellow-600"><Link className='text-decoration-none text-white' href={'###'}>About Us</Link></li>
-                                        <li className="py-2 hover:text-yellow-600"><Link className='text-decoration-none text-white' href={'###'}>Privacy</Link></li>
+                                        <li className="py-2 hover:text-yellow-600"><Link className='text-white text-decoration-none' href={'###'}>About Us</Link></li>
+                                        <li className="py-2 hover:text-yellow-600"><Link className='text-white text-decoration-none' href={'###'}>Privacy</Link></li>
                                     </ul>
                                 </div>
                             </div>
                             <Divider className='bg-gray-100' />
                             <div className="row">
-                                <Button shape='round' className='bg-yellow-500 border-0 font-bold py-4 text-xl'>CONTACT US</Button>
+                                <Button shape='round' className='py-4 text-xl font-bold bg-yellow-500 border-0'>CONTACT US</Button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="row bg-white py-3 px-12 font-medium">
+                <div className="px-12 py-3 font-medium bg-white row">
                     <div className="col-sm col-md col-lg">
-                        <p className="text-sm">Copyright © 2013-2024 Powered by HigherLife Recruitment. All rights reserved.</p>
+                        <p className="text-sm text-black">Copyright © 2013-2025 Powered by HigherLife Recruitment. All rights reserved.</p>
                     </div>
                 </div>
             </div>
